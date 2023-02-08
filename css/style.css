@@ -1,0 +1,138 @@
+body {
+    line-height: 200%;
+}
+
+
+header,
+nav {
+    padding: 3px 12px 2px 100px;
+    margin: 30px;
+    /* Set padding and margin */
+}
+
+nav ul li {
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #FCE4C3
+}
+
+nav a {
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited {
+    /* Set color */
+    color: #000000;
+}
+
+nav a.current {
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    text-underline-offset: 5px
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:wght@300;400&display=swap);
+
+h1 {
+    /*Set font and font size*/
+    font-size: 42px;
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+    /*Set font, font size, and alignment*/
+    font-size: 32px;
+    font-family: 'Anton', 'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+h3 {
+    /*Set font size*/
+    font-size: 20px;
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', Times, serif
+}
+
+h1,
+h2,
+h3 {
+    /*Set margin */
+    margin: 5px 10px 5px 10px;
+}
+
+.grid {
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 40px;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #728291;
+    display: inline-grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 40px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.grid div {
+    /* Set border properties, padding, and background color */
+    border: 2px solid #333333;
+    border-radius: 10px;
+    padding: 25px 35px 25px 15px;
+    background-color: #F5F8FB
+}
+
+.grid img {
+    /* Set width, margin, and display */
+    width: 90%;
+    margin: 5px 15px 10px 15px;
+    display: grid
+}
+
+
+.grid div:nth-child(3n+1) {
+    /* Set box shadow */
+    box-shadow: 10px 0px 5px #A8A9A9;
+}
+
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -10px 0px 5px #A8A9A9;
+}
+
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+
+    box-shadow: 10px 0px 5px #A8A9A9, -10px 0px 5px #A8A9A9;
+
+
+}
+
+
+p+p {
+    /* Set indentation */
+    text-indent: 50px
+}
+
+p {
+    /* Set margin */
+    margin: 2px 0px 0px 10px;
+    font-size: 3px;
+    line-height: 1.5;
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', Times, serif
+}
+
+
+.grid ul li {
+    /* Set margin, line-spacing, list styling  */
+    margin: 2px 0px 0px 10px;
+    line-height: 1;
+    list-style-image: url('/images/sketchbook.png')
+}
